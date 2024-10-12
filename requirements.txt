@@ -1,0 +1,13 @@
+av==8.0.3
+tqdm==4.61.1
+pims==0.5
+easing_functions==1.0.4
+tensorboard==2.5.0
+tqdm==4.65.0
+protobuf==3.19.0
+opencv-python
+termcolor
+yacs
+pyyaml
+scipy
+opencv-python
