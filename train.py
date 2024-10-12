@@ -64,7 +64,7 @@ python train.py \
     --train-hr \
     --resolution-lr 512 \
     --resolution-hr 2048 \
-    --seq-length-lr 15 \
+    --seq-length-lr 20 \
     --seq-length-hr 3 \
     --learning-rate-backbone 0.00001 \
     --learning-rate-aspp 0.00001 \
