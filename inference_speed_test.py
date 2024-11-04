@@ -1,12 +1,12 @@
 """
 python inference_speed_test.py \
-    --model-variant unireolknet \
+    --model-variant unireplknet \
     --resolution 1920 1080 \
     --downsample-ratio 0.25 \
     --precision float32
 
 python inference_speed_test.py \
-    --model-variant unireolknet \
+    --model-variant unireplknet \
     --resolution 512 288 \
     --downsample-ratio 1 \
     --precision float32
