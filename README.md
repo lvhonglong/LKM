@@ -61,7 +61,7 @@ video:
 ```python
 python inference.py \
   --variant unireplknet \
-  --checkpoint "./pretrained/model.pth" \
+  --checkpoint "./pretrained/rep_model.pth" \
   --device cuda \
   --input-source "input.mp4" \
   --output-type video \
