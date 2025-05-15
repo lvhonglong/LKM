@@ -7,14 +7,6 @@
 The GitHub repository for the paper **Real-time Video Portrait Matting Method Based on Large-Kernel Convolutions**. LKM is designed for high-precision, real-time video matting of portraits. This paper proposes a video portrait matting network based on large-kernel convolution, achieving high-precision real-time video portrait matting through the use of large-kernel convolutions, wavelet transforms, and re-parameterization techniques. The network employs large-kernel convolutions to enhance the encoding and decoding capabilities of image features. Additionally, the wavelet transform is used to pass image information to the decoding network, providing more useful information. Finally, re-parameterization technology is employed to fuse multiple convolution branches with large kernels in parallel, effectively reducing computational burden and speeding up inference. The model can achieve processing speeds of 103 fps for HD video and 94 fps for 4K video on an Nvidia GTX 3090 GPU, enabling real-time video matting.
 <br>
 
-## News
-
-* 
-
-<br>
-
-
-<br>
 
 ## Environment Setup
 
