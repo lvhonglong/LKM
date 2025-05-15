@@ -75,7 +75,7 @@ python inference.py \
 
 ```python
 python inference.py \
-    --variant mobilenetv3 \
+    --variant unireplknet \
     --checkpoint "./pretrained/rep_model.pth" \
     --device cuda \
     --input-source ./your_folder \
