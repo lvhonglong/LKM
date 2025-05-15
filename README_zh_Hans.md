@@ -1,10 +1,10 @@
-# **A Real-Time Video Portrait Matting Method Based on Large-Kernel Convolution**
+# **Real-time Video Portrait Matting Method Based on Large-Kernel Convolutions**
 
 ![Teaser](/documentation/image/teaser.gif)
 
 <p align="center"><a href="README.md">English</a> | 中文</p>
 
-论文 **A Real-Time Video Portrait Matting Method Based on Large-Kernel Convolution**的 GitHub 库。LKM 为高精度实时人像视频抠像设计。本文提出了一种基于大核卷积设计的视频人像抠图网络，通过使用大核卷积、小波变换和重参数化等技术，实现了端到端的高精度实时视频人像抠图。网络中使用了大核卷积，以提升对图像特征的编解码能力。同时，通过小波变换将图像的信息传递给解码网络，提供更多的有用信息。最后，采用重参数化技术将大卷积核并行的多个卷积分支进行融合，有效减少了计算负担，加快了推理速度。模型可以在Nvidia GTX 3090 GPU上实现**HD 103 fps**和**4K 94 fps**的处理速度，实现实时视频抠图。
+论文 **Real-time Video Portrait Matting Method Based on Large-Kernel Convolutions**的 GitHub 库。LKM 为高精度实时人像视频抠像设计。本文提出了一种基于大核卷积设计的视频人像抠图网络，通过使用大核卷积、小波变换和重参数化等技术，实现了端到端的高精度实时视频人像抠图。网络中使用了大核卷积，以提升对图像特征的编解码能力。同时，通过小波变换将图像的信息传递给解码网络，提供更多的有用信息。最后，采用重参数化技术将大卷积核并行的多个卷积分支进行融合，有效减少了计算负担，加快了推理速度。模型可以在Nvidia GTX 3090 GPU上实现**HD 103 fps**和**4K 94 fps**的处理速度，实现实时视频抠图。
 
 <br>
 
@@ -70,6 +70,21 @@ python inference.py \
   --output-foreground "out_fgr.mp4" \
   --output-video-mbps 4 \
   --seq-chunk 12
+```
+图片:
+
+```python
+python inference.py \
+    --variant mobilenetv3 \
+    --checkpoint "./pretrained/rep_model.pth" \
+    --device cuda \
+    --input-source ./your_folder \
+    --output-type png_sequence \
+    --output-composition ./your_folder_com \
+    --output-alpha ./your_folder_alpha \
+    --output-foreground ./your_folder_fgr \
+    --output-video-mbps 4 \
+    --seq-chunk 1
 ```
 
 摄像头：

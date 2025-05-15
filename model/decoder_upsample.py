@@ -2,7 +2,7 @@ import torch
 from torch import Tensor
 from torch import nn
 from typing import Optional
-from .Unireplknet import DilatedReparamBlockk
+from .unireplknet_net import DilatedReparamBlockk
 from pytorch_wavelets import DWTForward
 
 import os

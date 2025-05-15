@@ -1,4 +1,4 @@
-from .Unireplknet import UniRepLKNet
+from .unireplknet_net import UniRepLKNet
 import torch
 from torch import nn
 from torchvision.transforms.functional import normalize
