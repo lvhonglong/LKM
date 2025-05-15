@@ -1,10 +1,10 @@
-# **A Real-Time Video Portrait Matting Method Based on Large Kernel Convolution**
+# **Real-time Video Portrait Matting Method Based on Large-Kernel Convolutions**
 
 ![Teaser](/documentation/image/teaser.gif)
 
 <p align="center">English | <a href="README_zh_Hans.md">中文</a></p>
 
-The GitHub repository for the paper **A Real-Time Video Portrait Matting Method Based on Large-Kernel Convolution**. LKM is designed for high-precision, real-time video matting of portraits. This paper proposes a video portrait matting network based on large-kernel convolution, achieving high-precision real-time video portrait matting through the use of large-kernel convolutions, wavelet transforms, and re-parameterization techniques. The network employs large-kernel convolutions to enhance the encoding and decoding capabilities of image features. Additionally, the wavelet transform is used to pass image information to the decoding network, providing more useful information. Finally, re-parameterization technology is employed to fuse multiple convolution branches with large kernels in parallel, effectively reducing computational burden and speeding up inference. The model can achieve processing speeds of 103 fps for HD video and 94 fps for 4K video on an Nvidia GTX 3090 GPU, enabling real-time video matting.
+The GitHub repository for the paper **Real-time Video Portrait Matting Method Based on Large-Kernel Convolutions**. LKM is designed for high-precision, real-time video matting of portraits. This paper proposes a video portrait matting network based on large-kernel convolution, achieving high-precision real-time video portrait matting through the use of large-kernel convolutions, wavelet transforms, and re-parameterization techniques. The network employs large-kernel convolutions to enhance the encoding and decoding capabilities of image features. Additionally, the wavelet transform is used to pass image information to the decoding network, providing more useful information. Finally, re-parameterization technology is employed to fuse multiple convolution branches with large kernels in parallel, effectively reducing computational burden and speeding up inference. The model can achieve processing speeds of 103 fps for HD video and 94 fps for 4K video on an Nvidia GTX 3090 GPU, enabling real-time video matting.
 <br>
 
 ## News
@@ -71,6 +71,22 @@ python inference.py \
   --output-video-mbps 4 \
   --seq-chunk 12
 ```
+picture:
+
+```python
+python inference.py \
+    --variant mobilenetv3 \
+    --checkpoint "./pretrained/rep_model.pth" \
+    --device cuda \
+    --input-source ./your_folder \
+    --output-type png_sequence \
+    --output-composition ./your_folder_com \
+    --output-alpha ./your_folder_alpha \
+    --output-foreground ./your_folder_fgr \
+    --output-video-mbps 4 \
+    --seq-chunk 1
+```
+
 
 wecab:
 
